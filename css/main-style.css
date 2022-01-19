@@ -1,11 +1,21 @@
-/* ==========================
-        #Main-Styles
-========================== */
+/* *
+                      * ==================== INDEX OF FILE ==================== *
+                      * Main Style (Which is the main styling in the all pages we created)
+                      * Main Tags (Which contains the tags have initial styles)
+* */
+
+/* * ==========================
+        * #Main-Styles
+* ========================== */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --black-color: #292929;
 }
 
 html {
@@ -14,12 +24,13 @@ html {
 }
 
 body {
+  background-color: var(--black-color);
   font-family: "Poppins", sans-serif;
 }
 
-/* ==========================
-        #Main-Tags
-========================== */
+/* * ==========================
+        * #Main-Tags
+* ========================== */
 
 a {
   text-decoration: none;

@@ -16,10 +16,19 @@
 
 :root {
   --black-color: #292929;
+  --white-color: rgb(240, 240, 240);
+  --main-blue: #3d5a80;
+  --main-lighter-blue: #98c1d9;
+  --main-lighter-green: #e0fbfc;
+  --main-pink: #ee6c4d;
+  --main--dark-blue: #293241;
+  --font-size-main: 14px;
+  --mx: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
 html {
-  font-size: 14px;
+  /* height: 20000px; */
+  font-size: var(--font-size-main);
   scroll-behavior: smooth;
 }
 

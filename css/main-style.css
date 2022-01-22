@@ -26,6 +26,11 @@
   --mx: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
+::selection {
+  color: var(--main-lighter-green);
+  background-color: var(--main-blue);
+}
+
 html {
   /* height: 20000px; */
   font-size: var(--font-size-main);

@@ -10,7 +10,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-radius: 30px;
   color: var(--white-color);
   background-color: var(--main-blue);
   z-index: 9999999;

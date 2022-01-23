@@ -47,6 +47,7 @@
 
     <!-- * There are all files which we determined every file for every section -->
     <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/chats.css">
 
     <!-- * This is a html5shive.script -->
     <!--[if lt IE 9]>
@@ -69,7 +70,7 @@
 
         <ul class="navigation__list">
             <li class="navigation__list__item list-title" value-item="Chats">
-                <a href="#" class="navigation__list__icon">
+                <a id="chatIcon" href="#" class="navigation__list__icon">
                     <i class="far fa-comments"></i>
                 </a>
             </li>
@@ -123,6 +124,139 @@
             </li>
         </ul> <!-- ./navigation__list -->
     </nav> <!-- ./navigation -->
+
+    <section class="chats" id="chats">
+        <div class="chats__header">
+            <p class="chats__title">Chats</p>
+            <i class="fas fa-user-plus" id="addNewContact"></i>
+        </div> <!-- ./chats__header -->
+
+        <div class="chats__searchBox">
+            <input class="chats__searchBox__input" type="search" name="search" id="search" autocomplete="off"
+                placeholder="Search for your chat..">
+        </div> <!-- ./chats__searchBox -->
+
+        <div class="chats__favourite">
+            <p class="chats__favourite__title">Favourites Chats</p>
+            <ul class="chats__favourite__list-users">
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">12</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">6</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+            </ul> <!-- ./chats__favourites__list-users -->
+        </div> <!-- ./chats__favourites -->
+
+        <div class="line-horizontal"></div>
+
+        <div class="chats__direct-messages" id="directMsg">
+            <p class="chats__direct-messages__title">direct messages</p>
+            <ul class="chats__favourite__list-users">
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">12</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">6</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
+                            alt="User">
+                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
+                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
+                    </a>
+                </li>
+            </ul> <!-- ./chats__favourites__list-users -->
+        </div> <!-- ./chats__direct-messages -->
+
+    </section> <!-- ./chats -->
 
     <script src="js/script.js"></script>
 </body>

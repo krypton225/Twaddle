@@ -46,219 +46,57 @@
     <link rel="stylesheet" href="css/main-style.css">
 
     <!-- * There are all files which we determined every file for every section -->
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/chats.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!-- * This is a html5shive.script -->
     <!--[if lt IE 9]>
-	    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
+         <script src="js/html5shiv.min.js"></script>
+     <![endif]-->
 
 </head>
 
 <body>
 
-    <!-- * Main Fixed Navigation Bar -->
-    <nav class="navigation" id="navBar">
-        <div class="navigation__hamburger">
-            <svg viewBox="0 0 100 80" width="20" height="20">
-                <rect width="100" height="13" rx="7"></rect>
-                <rect y="30" width="100" height="13" rx="7"></rect>
-                <rect y="60" width="100" height="13" rx="7"></rect>
-            </svg>
-        </div> <!-- ./navigation__hamburger -->
+    <nav class="navbar" id="navBar">
 
-        <ul class="navigation__list">
-            <li class="navigation__list__item list-title" value-item="Chats">
-                <a id="chatIcon" href="#" class="navigation__list__icon">
-                    <i class="far fa-comments"></i>
-                </a>
-            </li>
+        <div class="navbar__logo" id="home">
+            <a href="#home">Twaddle</a>
+        </div> <!-- ./navbar__logo -->
 
-            <li class="navigation__list__item list-title" value-item="Contacts">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-id-badge"></i>
-                </a>
-            </li>
+        <div class="navbar__toggle" onclick="toggleMenu();"></div>
 
-            <li class="navigation__list__item list-title" value-item="Groups Chats">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-users"></i>
-                </a>
-            </li>
+        <ul class="navbar__menu">
+            <li><a href="#landingPage" onclick="toggleMenu();">home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">about</a></li>
+            <li><a href="#services" onclick="toggleMenu();">services</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">contact</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">log in</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">register now</a></li>
+        </ul> <!-- ./navbar__menu -->
+    </nav> <!-- ./navbar -->
 
-            <li class="navigation__list__item list-title" value-item="Calls">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-phone-alt"></i>
-                </a>
-            </li>
+    <section class="landing-page" id="landingPage">
+        <div class="landing-page__info">
+            <h1 class="landing-page__title">
+                <span>T</span>wa<span>d</span>dl<span>e</span>
+            </h1> <!-- ./landing-page__title -->
 
-            <li class="navigation__list__item list-title" value-item="Video Calls">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-video"></i>
-                </a>
-            </li>
+            <p class="landing-page__desc">
+                Let's Chatting now with Twaddle, Man!
+            </p> <!-- ./landing-page__desc -->
+        </div> <!-- ./landing-page__info -->
 
-            <li class="navigation__list__item list-title" value-item="Meetings">
-                <a href="#" class="navigation__list__icon">
-                    <i class="far fa-handshake"></i>
-                </a>
-            </li>
+        <div class="landing-page__image">
+            <img src="assets/svgs/networking-people.svg" alt="People Chatting!" draggable="false">
+        </div> <!-- ./landing-page__image -->
+    </section> <!-- ./landing-page -->
 
-            <li class="navigation__list__item list-title" value-item="Change Mode">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-moon"></i>
-                </a>
-            </li>
+    <!-- Twaddle Chat is an intelligent and secure communication and collaboration tool, built for any one.
+                Twaddle makes the connection between people very easy! <span>Enjoy</span> it now! -->
 
-            <li class="navigation__list__item list-title" value-item="Setting">
-                <a href="#" class="navigation__list__icon">
-                    <i class="fas fa-cog"></i>
-                </a>
-            </li>
+    <!-- <section class="about" id="about"></section> -->
 
-            <li class="navigation__list__item list-title" value-item="Khaled Mohamed">
-                <a href="#" class="navigation__list__icon--raduis-50">
-                    <img src="assets/imgage/Avatar.jpg" alt="Avatar">
-                </a>
-            </li>
-        </ul> <!-- ./navigation__list -->
-    </nav> <!-- ./navigation -->
-
-    <section class="chats" id="chats">
-        <div class="chats__header">
-            <p class="chats__title">Chats</p>
-            <i class="fas fa-user-plus" id="addNewContact"></i>
-        </div> <!-- ./chats__header -->
-
-        <div class="chats__searchBox">
-            <input class="chats__searchBox__input" type="search" name="search" id="search" autocomplete="off"
-                placeholder="Search for your chat..">
-        </div> <!-- ./chats__searchBox -->
-
-        <div class="chats__favourite">
-            <p class="chats__favourite__title">Favourites Chats</p>
-            <ul class="chats__favourite__list-users">
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">12</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">6</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-            </ul> <!-- ./chats__favourites__list-users -->
-        </div> <!-- ./chats__favourites -->
-
-        <div class="line-horizontal"></div>
-
-        <div class="chats__direct-messages" id="directMsg">
-            <p class="chats__direct-messages__title">direct messages</p>
-            <ul class="chats__favourite__list-users">
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">12</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">6</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img class="chats__favourite__list-users__user-avatar" src="assets/imgage/Avatar.jpg"
-                            alt="User">
-                        <span class="chats__favourite__list-users__user-name">Khaled Mohamed</span>
-                        <span class="chats__favourite__list-users__num-msgs" id="numberMessages">4</span>
-                    </a>
-                </li>
-            </ul> <!-- ./chats__favourites__list-users -->
-        </div> <!-- ./chats__direct-messages -->
-
-    </section> <!-- ./chats -->
-
-    <script src="js/script.js"></script>
+    <script src="js/script-index.js"></script>
 </body>
 
 </html>

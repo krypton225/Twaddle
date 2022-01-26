@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="css/main-style.css">
 
     <!-- * There are all files which we determined every file for every section -->
+    <link rel="stylesheet" href="css/go-to-top.css">
     <link rel="stylesheet" href="css/nav-bar-index.css">
     <link rel="stylesheet" href="css/landing-page.css">
     <link rel="stylesheet" href="css/about.css">
@@ -59,6 +60,10 @@
 </head>
 
 <body>
+
+    <a class="go-to-top" id="goToTop" href="#landingPage">
+        <i class="fas fa-arrow-up"></i>
+    </a> <!-- ./go-to-top -->
 
     <!-- * Navbar Section -->
     <nav class="navbar" id="navBar">
@@ -111,8 +116,32 @@
                 any one.
                 <span>Twaddle</span> makes the connection between people very easy!<br><span>Enjoy</span> it now!
             </p> <!-- ./about__left__desc -->
+            <p class="about__title">About</p>
         </div> <!-- ./about__left -->
     </section> <!-- ./about -->
+
+    <!-- * Services Section -->
+    <section class="services" id="services">
+        <p class="services__title">services</p>
+
+        <div class="services__container">
+
+            <div class="services__container__item">
+                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
+                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            </div> <!-- ./services__container__item -->
+
+            <div class="services__container__item">
+                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
+                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            </div> <!-- ./services__container__item -->
+
+            <div class="services__container__item">
+                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
+                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            </div> <!-- ./services__container__item -->
+        </div> <!-- ./services__container -->
+    </section> <!-- ./services -->
 
     <script src="js/script-index.js"></script>
 </body>

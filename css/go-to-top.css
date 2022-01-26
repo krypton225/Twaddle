@@ -1,0 +1,28 @@
+.go-to-top {
+  width: 2.7rem;
+  height: 2.7rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-pink);
+  color: var(--white-color);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999999999;
+  transition: 0.4s ease-in;
+}
+
+.go-to-top.show-goToTop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fa-arrow-up {
+  font-size: 1.4rem;
+}

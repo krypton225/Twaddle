@@ -33,3 +33,12 @@ const ELs_inViewport = document.querySelectorAll("[data-inviewport]");
 ELs_inViewport.forEach((EL) => {
   Obs.observe(EL, obsOptions);
 });
+
+/** **************************************
+ * For Go to top icon.
+ * *************************************** */
+
+window.addEventListener("scroll", function () {
+  const goToTop = document.querySelector("#goToTop");
+  goToTop.classList.toggle("show-goToTop", window.scrollY > 100);
+});

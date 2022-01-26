@@ -5,6 +5,7 @@
                         ? 1- Poppins.
                         ? 2- Lato.
                         ? 3- Cairo.
+                        ? 4- Sedgwick Ave.
 * */
 
 /* * ====================
@@ -361,5 +362,30 @@
     /* Modern Browsers */ url("../fonts/cairo-v14-latin-900.ttf")
       format("truetype"),
     /* Safari, Android, iOS */ url("../fonts/cairo-v14-latin-900.svg#Cairo")
+      format("svg"); /* Legacy iOS */
+}
+
+/* * ====================
+   * #Sedgwick Ave
+   * ====================
+* */
+
+/* sedgwick-ave-regular - latin */
+@font-face {
+  font-family: "Sedgwick Ave";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/sedgwick-ave-v10-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/sedgwick-ave-v10-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/sedgwick-ave-v10-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/sedgwick-ave-v10-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/sedgwick-ave-v10-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/sedgwick-ave-v10-latin-regular.svg#SedgwickAve")
       format("svg"); /* Legacy iOS */
 }

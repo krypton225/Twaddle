@@ -1,0 +1,31 @@
+.services {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1.7px;
+  color: var(--white-color);
+}
+
+.services__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.services__container__item {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

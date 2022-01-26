@@ -1,3 +1,7 @@
+/** **************************************
+ * For Toogle the hamburger menu.
+ * *************************************** */
+
 function toggleMenu() {
   let toggle = document.querySelector(".navbar__toggle");
   toggle.classList.toggle("active");
@@ -9,4 +13,23 @@ function toggleMenu() {
 window.addEventListener("scroll", function () {
   const navBar = document.querySelector("#navBar");
   navBar.classList.toggle("sticky-scroll", window.scrollY > 0);
+});
+
+/** **************************************
+ * For CSS3 Animate the section in viewport.
+ * *************************************** */
+
+const inViewport = (entries, observer) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+  });
+};
+
+const Obs = new IntersectionObserver(inViewport);
+const obsOptions = {};
+
+// Attach observer to every [data-inviewport] element:
+const ELs_inViewport = document.querySelectorAll("[data-inviewport]");
+ELs_inViewport.forEach((EL) => {
+  Obs.observe(EL, obsOptions);
 });

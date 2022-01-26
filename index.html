@@ -46,7 +46,10 @@
     <link rel="stylesheet" href="css/main-style.css">
 
     <!-- * There are all files which we determined every file for every section -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav-bar-index.css">
+    <link rel="stylesheet" href="css/landing-page.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
 
     <!-- * This is a html5shive.script -->
     <!--[if lt IE 9]>
@@ -57,8 +60,8 @@
 
 <body>
 
+    <!-- * Navbar Section -->
     <nav class="navbar" id="navBar">
-
         <div class="navbar__logo" id="home">
             <a href="#home">Twaddle</a>
         </div> <!-- ./navbar__logo -->
@@ -70,31 +73,46 @@
             <li><a href="#about" onclick="toggleMenu();">about</a></li>
             <li><a href="#services" onclick="toggleMenu();">services</a></li>
             <li><a href="#contact" onclick="toggleMenu();">contact</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">log in</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">register now</a></li>
+            <li><a href="#contact" class="navbar__menu__btn" onclick="toggleMenu();">log in</a></li>
+            <li><a href="#contact" class="navbar__menu__btn" onclick="toggleMenu();">register now</a></li>
         </ul> <!-- ./navbar__menu -->
     </nav> <!-- ./navbar -->
 
+    <!-- * Landing Page Section -->
     <section class="landing-page" id="landingPage">
-        <div class="landing-page__info">
+        <div class="landing-page__info" data-inviewport="animate-from-bottom">
             <h1 class="landing-page__title">
                 <span>T</span>wa<span>d</span>dl<span>e</span>
             </h1> <!-- ./landing-page__title -->
 
             <p class="landing-page__desc">
-                Let's Chatting now with Twaddle, Man!
+                Let's Chatting now with Twaddle!<br>
+                Twaddle is free for everyone.
             </p> <!-- ./landing-page__desc -->
+
+            <a class="landing-page__link" href="#about">read more</a>
         </div> <!-- ./landing-page__info -->
 
-        <div class="landing-page__image">
+        <div class="landing-page__image" data-inviewport="animate-from-bottom">
             <img src="assets/svgs/networking-people.svg" alt="People Chatting!" draggable="false">
         </div> <!-- ./landing-page__image -->
+
     </section> <!-- ./landing-page -->
 
-    <!-- Twaddle Chat is an intelligent and secure communication and collaboration tool, built for any one.
-                Twaddle makes the connection between people very easy! <span>Enjoy</span> it now! -->
+    <!-- * About Section -->
+    <section class="about" id="about">
+        <div class="about__right" data-inviewport="animate-from-left">
+            <img src="assets/svgs/live-chat.svg" alt="Hands Photo With Phone!" draggable="false">
+        </div> <!-- ./about__right -->
 
-    <!-- <section class="about" id="about"></section> -->
+        <div class="about__left" data-inviewport="animate-from-right">
+            <p class="about__left__desc">
+                <span>Twaddle</span> Chat is an intelligent and secure communication and collaboration tool, built for
+                any one.
+                <span>Twaddle</span> makes the connection between people very easy!<br><span>Enjoy</span> it now!
+            </p> <!-- ./about__left__desc -->
+        </div> <!-- ./about__left -->
+    </section> <!-- ./about -->
 
     <script src="js/script-index.js"></script>
 </body>

@@ -28,13 +28,27 @@
   --mx: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 8rem;
+  border-radius: 13rem;
+  background-color: var(--main--dark-blue);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black-color);
+}
+
 ::selection {
   color: var(--main-lighter-green);
   background-color: var(--main-blue);
 }
 
 html {
-  /* height: 20000px; */
+  height: 20000px;
   font-size: var(--font-size-main);
   scroll-behavior: smooth;
 }
@@ -84,4 +98,61 @@ section {
   height: 1px;
   border-radius: 20px;
   margin: 1.5rem auto;
+}
+
+/* * ==========================
+        * #Animations
+* ========================== */
+
+@keyframes from_bottom_to_top {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+/* * Animate from left to right */
+
+[data-inviewport="animate-from-left"] {
+  transform: translateX(-55px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+[data-inviewport="animate-from-left"].is-inViewport {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* * Animate from right to left */
+
+[data-inviewport="animate-from-right"] {
+  transform: translateX(55px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+[data-inviewport="animate-from-right"].is-inViewport {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* * Animate from bottom to top */
+
+[data-inviewport="animate-from-bottom"] {
+  transform: translateY(55px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+[data-inviewport="animate-from-bottom"].is-inViewport {
+  transform: translateY(0);
+  opacity: 1;
 }

@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="css/landing-page.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- * This is a html5shive.script -->
     <!--[if lt IE 9]>
@@ -122,26 +123,77 @@
 
     <!-- * Services Section -->
     <section class="services" id="services">
-        <p class="services__title">services</p>
+        <p class="services__title-sec">
+            <span class="services__title__first-letter">s</span>ervices
+        </p>
 
         <div class="services__container">
 
-            <div class="services__container__item">
-                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
-                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/group-chat.svg" alt="Group Chats" draggable="false">
+                </div> <!-- ./services__container__item__img -->
+                <p class="services__container__item__desc">making group chats</p>
             </div> <!-- ./services__container__item -->
 
-            <div class="services__container__item">
-                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
-                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/startup-rocket.svg" alt="Super Delivered Messages" draggable="false">
+                </div>
+                <p class="services__container__item__desc">speed chating</p>
             </div> <!-- ./services__container__item -->
 
-            <div class="services__container__item">
-                <img src="assets/svgs/group-chat.svg" alt="Group Chat" draggable="false">
-                <p class="services__container__item__desc">You can make a group chat with your friends easily!</p>
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/video-call-svgrepo-com.svg" alt="Make A Call And Video" draggable="false">
+                </div>
+                <p class="services__container__item__desc">make a call & video</p>
+            </div> <!-- ./services__container__item -->
+
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/gdpr-family-lock-computer.svg" alt="Async Chats" draggable="false">
+                </div>
+                <p class="services__container__item__desc">async chats</p>
+            </div> <!-- ./services__container__item -->
+
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/phone-message.svg" alt="Async Mobile App" draggable="false">
+                </div>
+                <p class="services__container__item__desc">async mobile app</p>
+            </div> <!-- ./services__container__item -->
+
+            <div class="services__container__item" data-inviewport="animate-from-bottom">
+                <div class="services__container__item__img">
+                    <img src="assets/svgs/multimedia-icon-folder.svg" alt="Group Chats" draggable="false">
+                </div> <!-- ./services__container__item__img -->
+                <p class="services__container__item__desc">send files</p>
             </div> <!-- ./services__container__item -->
         </div> <!-- ./services__container -->
     </section> <!-- ./services -->
+
+    <!-- * Contact Section -->
+    <section class="contact" id="contact">
+        <p class="contact__title-sec">
+            <span class="contact__title__first-letter">c</span>ontact
+        </p> <!-- ./contact__title-sec -->
+
+        <form class="contact__form" action="" method="post" autocomplete="off">
+            <div class="contact__form__input--in50">
+                <input class="contact__form__input__name" type="text" name="name" id="personName" placeholder="name">
+                <input class="contact__form__input__email" type="email" name="email" id="personEmail"
+                    placeholder="email">
+            </div> <!-- ./contact__form__input--in50 -->
+
+            <div class="contact__form__input--in100">
+                <textarea name="message" class="contact__form__input__message" id="msg"
+                    placeholder="message..."></textarea>
+                <a class="contact__form__send-msg" id="sendMsg" href="#">send message</a>
+            </div> <!-- ./contact__form__input--in100 -->
+        </form> <!-- ./contact__form -->
+
+    </section> <!-- ./contact -->
 
     <script src="js/script-index.js"></script>
 </body>

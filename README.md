@@ -1,3 +1,3 @@
-# Chatting-App
+# Twaddle
 
-Chatting app in web.
+Twaddle is a chatting app in web.

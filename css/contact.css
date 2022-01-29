@@ -189,6 +189,12 @@
   }
 }
 
+@media (max-width: 680px) {
+  .contact {
+    margin-top: 20rem;
+  }
+}
+
 @media (max-width: 500px) {
   .contact {
     margin-top: 65rem;
@@ -197,6 +203,12 @@
 
 @media (max-width: 400px) {
   .contact {
-    margin-top: 45rem;
+    margin-top: 65rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact {
+    margin-top: 70rem;
   }
 }

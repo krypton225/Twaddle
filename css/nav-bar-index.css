@@ -109,6 +109,21 @@
     cursor: pointer;
   }
 
+  .navbar__toggle:focus,
+  .navbar__toggle:active,
+  .navbar__toggle:hover {
+    filter: none;
+    outline: none !important;
+    border: none !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .navbar__menu {
     position: fixed;
     top: 75px;

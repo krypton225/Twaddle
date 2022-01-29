@@ -71,7 +71,9 @@ a {
 a:active,
 a:focus,
 li:focus,
-li:active {
+li:active,
+img:active,
+img:focus {
   outline: none !important;
   border: none !important;
   text-decoration: none !important;
@@ -81,6 +83,7 @@ li:active {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  filter: none;
 }
 
 ul {
